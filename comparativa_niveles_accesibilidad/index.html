@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niveles de Accesibilidad – A vs AA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Comparativa de Niveles WCAG: A vs AA</h1>
+    <p>Ejemplos prácticos para comprender las diferencias</p>
+  </header>
+  <main class="grid">
+    <!-- Texto alternativo -->
+    <section>
+      <h2>✅ Nivel A - Imagen con alt básico</h2>
+      <img src="imagen.jpg" alt="Logo de empresa">
+    </section>
+    <section>
+      <h2>✅ Nivel AA - Imagen con alt más descriptivo</h2>
+      <img src="imagen.jpg" alt="Logotipo de la empresa VASS en color azul, sobre fondo blanco">
+    </section>
+
+    <!-- Contraste -->
+    <section>
+      <h2>❌ Nivel A - Contraste bajo (no cumple AA)</h2>
+      <p style="color:#aaa; background:#fff;">Este texto no cumple el contraste mínimo de nivel AA.</p>
+    </section>
+    <section>
+      <h2>✅ Nivel AA - Contraste adecuado</h2>
+      <p style="color:#000; background:#fff;">Este texto sí cumple el contraste recomendado.</p>
+    </section>
+
+    <!-- Subtítulos -->
+    <section>
+      <h2>❌ Nivel A - Vídeo sin subtítulos</h2>
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </section>
+    <section>
+      <h2>✅ Nivel AA - Vídeo con subtítulos</h2>
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+        Tu navegador no soporta video.
+      </video>
+    </section>
+
+    <!-- Foco visible -->
+    <section>
+      <h2>❌ Nivel A - Foco no visible</h2>
+      <a href="#" class="nofocus">Enlace sin foco visible</a>
+    </section>
+    <section>
+      <h2>✅ Nivel AA - Foco claramente visible</h2>
+      <a href="#" class="withfocus">Enlace con foco visible</a>
+    </section>
+  </main>
+  <footer>
+    <p>Demostración educativa – Comparativa de cumplimiento WCAG</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Accesible</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header style="background-color: white; color: black; padding: 20px;">
+    <h1>Bienvenidos</h1>
+    <p>Este sitio cumple buenas prácticas de accesibilidad.</p>
+  </header>
+
+  <main>
+    <button onclick="alert('Haz clic')">Haz clic aquí</button>
+
+    <img src="imagen-con-alt.jpg" alt="Ilustración de accesibilidad web">
+
+    <form>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre"><br><br>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+
+    <a href="https://ejemplo.com" title="Ir al sitio Ejemplo">Ir al sitio Ejemplo</a>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <iframe src="whatsnew" title="Sitio web externo de ejemplo"></iframe>
+
+    <video controls>
+      <source src="video.mp4" type="video/mp4">
+      <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español">
+      Tu navegador no soporta el video.
+    </video>
+  </main>
+</body>
+</html>

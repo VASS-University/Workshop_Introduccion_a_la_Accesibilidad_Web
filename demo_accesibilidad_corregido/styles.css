@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+}
+button {
+  cursor: pointer;
+  background-color: #005fcc;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin: 10px 0;
+}
+a {
+  color: #005fcc;
+  font-size: 16px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav li {
+  margin-bottom: 5px;
+}
